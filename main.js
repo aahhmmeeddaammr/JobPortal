@@ -251,7 +251,7 @@ btn.addEventListener('click', ()=>{
             x=1;
             localStorage.setItem('user_id', JSON.stringify(userss[i]._id))
             localStorage.setItem('user_role', JSON.stringify(userss[i].Role))
-            location.href="../Home/index.html"
+            location.href="./Home/index.html"
         }   
     }
     if(!x){
