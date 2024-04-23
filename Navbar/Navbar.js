@@ -22,7 +22,7 @@ function displayNavbar() {
              <ul class="navbar-nav">
                  <li class="nav-link cursor-pointer"><a href="../Home/index.html">Home</a></li>
                  <li class="nav-link cursor-pointer"><a href="../About_page/about.html">About</a></li>
-                 <li class="nav-link cursor-pointer"><a href="../applied Jobs/index.html">Applied Jobs</a></li>
+                 <li class="nav-link cursor-pointer"><a href="../applied jobs/index.html">Applied Jobs</a></li>
                  <li id="admin" class="nav-link cursor-pointer"><a href="../Admin Jobs/index.html">Posted Jobs</a></li>
                  <li class="nav-link cursor-pointer"><a href="../Contact/contact.html">Contact</a></li>
                  <li id="admin2" class="nav-link">
