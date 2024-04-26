@@ -216,13 +216,19 @@ let jreq = "Strong technical programming skills utilizing a variety of different
 let sub = document.getElementById("submitting");
 
 sub.addEventListener("click", () => {
+     if(titleinput.value&&salaryinput.value&&expinput.value&&jobcompany.value&&Skills.length&&btnTexttwo.innerText&&jobdesc.value&&btnText.innerText){
+          let myjob = new job(titleinput.value, salaryinput.value, expinput.value, jobcompany.value,
+               Skills, curruser+1 , btnText.innerText, btnTexttwo.innerText, jobdesc.value);
+          jobArray.push(myjob.getjob()[JSON.parse(localStorage.getItem("jobs")).length])
+          localStorage.setItem("jobs", JSON.stringify(jobArray));
+          let newid=JSON.parse(localStorage.getItem("jobs")).length;
+          users[curruser].Post.push(newid)
+          localStorage.setItem("users",JSON.stringify(users));
+          window.location.href = "../Admin Jobs/index.html";
+      }else{
+          let alerts=document.querySelector(".nodata")
+          alerts.style=`display:block;`
+          alerts.innerHTML=`<p>ALL DATA ARE REQUIRED</p>`;    
+      }
      
-     let myjob = new job(titleinput.value, salaryinput.value, expinput.value, jobcompany.value,
-          Skills, curruser+1 , btnText.innerText, btnTexttwo.innerText, jobdesc.value);
-     jobArray.push(myjob.getjob()[JSON.parse(localStorage.getItem("jobs")).length])
-     localStorage.setItem("jobs", JSON.stringify(jobArray));
-     let newid=JSON.parse(localStorage.getItem("jobs")).length;
-     users[curruser].Post.push(newid)
-     localStorage.setItem("users",JSON.stringify(users));
-     window.location.href = "../Admin Jobs/index.html";
 })
