@@ -47,7 +47,7 @@ function search(){
                continue ;
           if ( Searchfromhomeexp && Jobs[i].ExperienceNeeded >= Searchfromhomeexp )
                continue ;
-          if ( Searchfromhomecat && Jobs[i].JobCategories != Searchfromhomecat )
+          if ( Searchfromhomecat && !Jobs[i].JobCategories.includes(Searchfromhomecat)  )
                continue ; 
           data.push(Jobs[i]) ;
      }
