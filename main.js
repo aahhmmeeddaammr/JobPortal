@@ -1,10 +1,8 @@
-
 let userss=JSON.parse(localStorage.getItem("users"));
 let uemail =document.getElementById('email')
 let upass=document.getElementById('password')
 let btn=document.getElementById('btn')
 let alert=document.querySelector(".alert")
-console.log(userss);
 let x=false;
 btn.addEventListener('click', ()=>{
     for (let i = 0; i < userss.length; i++) {

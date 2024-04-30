@@ -18,6 +18,7 @@
     font-family:  'Gill Sans MT';
 }
 
+
 .alert{
     background-color: green;
     margin: 10px 0px;
@@ -53,6 +54,13 @@
     border-radius: 10px;
 }
 
+.nodata{
+    background-color: rgba(255, 158, 158, 0.722);
+    margin: 10px 0px;
+    display: none;
+    justify-content: start;
+    padding: 10px;
+}
 .button{
     text-transform: capitalize;
     align-content: center;

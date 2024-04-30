@@ -1,11 +1,19 @@
-* {
+*{
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 400;
 }
 
-
+.nodata{
+    background-color: rgba(255, 158, 158, 0.722);
+    margin: 10px 0px;
+    display: none;
+    justify-content: start;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
 .postjob-Container {
     display: flex;
     justify-content: center;
@@ -16,7 +24,6 @@
     padding: 20px 10px;
     width: 600px;
 }
-
 .offer {
     font-size: 1.3rem;
     font-weight: 300;
@@ -134,7 +141,6 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-
 }
 
 .select-btn.open .arrow-dwn, .select-btn-two.open .arrow-dwn {
@@ -182,7 +188,6 @@
     justify-content: start;
     gap: 8px;
     flex-wrap: wrap;
-    /* background-color: #87868660; */
     padding: 10px;
 }
 
@@ -216,6 +221,6 @@
 
 @media (max-width: 620px ) {
     .postjob-Container {
-        width: 410px;
+        width: 100%;
     }
 }

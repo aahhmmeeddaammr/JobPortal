@@ -18,9 +18,7 @@ h1{
     width: 500px;
 }
 
-.Dsc{
-    
-}
+
 
 #Search:hover{
     background-color: white;
@@ -42,36 +40,35 @@ h1{
 .Dsc{
     display: flex;
     background-color:#e9e6e670;
-   margin: 5px 30px;
-   padding: 15px 10px;
+    margin: 5px 30px;
+    padding: 15px 10px;
     border-radius: 5px;
-   justify-content: space-between;
-   align-items: center;
-   transition: all 0.3s;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
 }
-
+.Dsc div:first-of-type{
+    width: 45%;
+}
+.button{
+    text-align: end;
+    width: 30%;
+}
+.button button{
+    display: inline-block;
+    text-wrap: nowrap;
+}
 .Delete{
-   
     background-color: tomato;
     color: white;
     border: 0;
     border-radius: 40px;
     width: 100px;
- 
-    
 }
-.Update{
-    
-    background-color: rgb(43, 43, 208);
-    color: white;
-    border: 0;
-    border-radius: 40px;
-    width: 100px;
-    
-}
+
 .Job{
     padding-bottom: 10px;
-   
+
 }
 span{
     color: #157efb;

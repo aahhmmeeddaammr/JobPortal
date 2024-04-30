@@ -9,9 +9,8 @@ if(localStorage.getItem("done")){
     document.querySelector(".loading").style=`display:none;`
 }else{
     setTimeout(()=>{
-    
         document.querySelector(".loading").style=`display:none;`
-    },2000)
+    },1500)
     localStorage.setItem("done",1);
 }
 
@@ -20,11 +19,9 @@ function displayPageNator() {
     myPageNatorNode.innerHTML += `<div class="pg ${(currentPage == 1) ? 'pg-disabled' : ''}" onclick="decPage()">
     <i class="fa-solid fa-arrow-left"></i>
     </div>`;
-
     for (let i = 0; i < JobArray.length; i += 4) {
         myPageNatorNode.innerHTML += `<div class="pg ${(currentPage == ((i / 4) + 1) ? 'pg-clicked' : '')}" onclick="CurrPage(${(i / 4) + 1})")> ${(i / 4) + 1}</div> `;
     }
-
     myPageNatorNode.innerHTML += `<div class="pg ${(currentPage * 4 >= JobArray.length) ? 'pg-disabled' : ''}" onclick="incPage()" ">
     <i class="fa-solid fa-arrow-right"></i>`;
 }
@@ -45,7 +42,7 @@ function updatePagenator() {
                     <span>${JobArray[i].location}</span>
                 </p>
             </div>
-            <button onclick="GoToApply(${i+1})" class="blue-btn">
+            <button onclick="GoToApply(${i+1})" class="btn btn-main">
                 Apply Job
             </button>
         </div>
@@ -66,7 +63,6 @@ function incPage() {
     updatePagenator();
     displayPageNator();
 }
-
 function decPage() {
     currentPage--;
     updatePagenator();
@@ -96,8 +92,7 @@ function searchJobTransfer() {
     location.href = "../Jobs/index.html";
 }
 
-function pickCategoryTransfer(e) {
-    console.log(e);
+function pickCategoryTransfer(e){
     localStorage.setItem("cat", JSON.stringify(e));
     location.href = "../Jobs/index.html";
 }
@@ -115,8 +110,5 @@ if (JobArray.length != 0) {
     updatePagenator();
 } else {
     Cat_ID.innerHTML =
-        `< p class="intro2" >
-    No
-    < span > Jobs</span >
-    </p > `;
+        `<p class="intro2" style="font-size:30px" >No<span > Jobs</span ></p> `;
 }

@@ -94,11 +94,16 @@ cpass.addEventListener("blur", ()=> {
 let create = document.getElementById("create");
 
 create.addEventListener("click", () => {
-    const newuser = new User("User", jname.value, pass.value, email.value);
-    localStorage.setItem("users", JSON.stringify(newuser.getusers()));
-    window.location.href = "../index.html";
+    if(jname.value&&pass.value&&email.value){
+        const newuser = new User("User", jname.value, pass.value, email.value);
+        localStorage.setItem("users", JSON.stringify(newuser.getusers()));
+        window.location.href = "../index.html";
+    }else{
+        let alerts=document.querySelector(".nodata")
+        alerts.style=`display:block;`
+        alerts.innerHTML=`<p>ALL DATA ARE REQUIRED</p>`;    
+    }
 })
-
 let redirect = document.getElementById("redirect");
 
 redirect.addEventListener("click", () => {

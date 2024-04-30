@@ -12,13 +12,12 @@
      z-index: 1000;
      flex-wrap: wrap;
      background-color: #fff;
-     /* padding:2vh 0vw !important ; */
 }
 .logo{
      text-align: left;
 }
 .logo:hover a{
-     color: #157efb;
+     color: #157efb !important;
 }
 .logo a{
      font-size: 30px ;

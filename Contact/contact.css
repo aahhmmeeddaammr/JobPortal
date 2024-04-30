@@ -3,7 +3,7 @@
     background-attachment: fixed;
     background-image:url('../about images/back.gif');
     background-repeat: no-repeat;
-    width: 99%;
+    /* width: 99%; */
     height:70%;
 }
 
@@ -24,7 +24,10 @@
 }
 .space {
     text-align: center;
-    gap: 2em;
+  
+}
+.contact-df{
+
 }
 .contact {
     display: flex;
@@ -40,17 +43,28 @@
     justify-content: center;
     padding-top: 0.9rem;
     background-color: white;
-    height: 560px;
-    width: 500px;
+    height: 100%;
+    padding: 30px 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+button{
+    margin-top: 10px;
+    text-wrap: nowrap;
+    min-width: fit-content !important;
+}
 .mp {
-    width: 500px;
-    height: 577px;
-    border: 0px;
+    width: 100%;
+    height: 70dvh;
+    border: 100px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* margin: 10px; */
+}
+.iframe{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 .ds {
     display: flex;
@@ -83,12 +97,11 @@
 .btnn {
     border-radius: 7px;
     width: 28%;
-    margin: auto;
 }
 .contact-df {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     font-family: 'Nunito Sans', Arial, sans-serif;
     font-size: large;
     align-items: center;
@@ -122,9 +135,7 @@
     .container {
         align-items: center;
     }
-    .mp {
-        margin: 0px auto;
-    }
+   
     .box {
         margin: 0px auto;
     }
@@ -134,8 +145,5 @@
     .ds1 {
         width: 330px;
     }
-    .bg-app{
-        width: 99%;
-        height:99%;
-    }
+    
 }

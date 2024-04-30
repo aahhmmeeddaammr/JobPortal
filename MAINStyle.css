@@ -43,12 +43,12 @@
 .btn-main {
   background-color: #157efb !important;
   color: #fff ;
-  border: #157efb 2px solid;
+  border: #157efb 2px solid !important;
   transition: color  0.5s;
   transition: background-color  0.5s;
 }
 .btn-main:hover {
-  color: #157efb;
+  color: #157efb !important;
   background-color: #fff !important;
 }
 .text-main {
@@ -66,13 +66,13 @@
 }
 .btn-sec-main {
   background-color: #5dd28e !important;
-  color: #fff ;
-  border: #5dd28e 2px solid;
-  transition: all 0.5s;
+  color: #fff !important;
+  border: #5dd28e 2px solid !important;
+  transition: all 0.5s !important;
 }
 .btn-sec-main:hover {
-  border: #5dd28e 2px solid;
-  color: #5dd28e;
+  border: #5dd28e 2px solid !important;
+  color: #5dd28e !important;
   background-color: #fff !important;
 }
 .w-1 {

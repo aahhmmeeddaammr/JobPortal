@@ -3,7 +3,7 @@ let JOBS= JSON.parse(localStorage.getItem('jobs'));
 let userr= JSON.parse(localStorage.getItem('users'));
 let curruse= JSON.parse(localStorage.getItem('user_id'));
 function displaycontent(){
-            data=''
+     data=''
      JOBS= JSON.parse(localStorage.getItem('jobs'));
      userr= JSON.parse(localStorage.getItem('users'));
      curruse= JSON.parse(localStorage.getItem('user_id'));

@@ -46,7 +46,7 @@ if(JSON.parse(localStorage.getItem("user_role"))!="Admin"){
      document.getElementById("admin2").style=`display:none;`
 }
 function responsiveNavbar(){
-     if(window.innerWidth<=1000){
+     if(window.innerWidth<=1200){
           resnavitems.style=
           `
                display: none;

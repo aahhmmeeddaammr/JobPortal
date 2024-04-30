@@ -47,8 +47,7 @@
     color: rgb(40, 40, 40);
 }
 .bg-gray {
-    padding-top: 50px;
-    height: 45vh;
+   padding: 10px  ;
     background-color: #f8f9fa;
     text-align: center;
     align-items: center;
@@ -63,17 +62,18 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding-top: 20px;
     padding: 0px 80px;
     gap: 2em;
+    
 }
 .ph {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 30%;
     text-align: center;
 }
 .ph img {
@@ -118,7 +118,6 @@
     }
     .bg-gray {
         margin: auto;
-        height: 43vh;
     }
     .tot-img {
         width: 80%;
@@ -132,12 +131,14 @@
         width: 120px;
         height: 120px;
     }
+    .ph {
+        width: 100%;
+    }
     .about{
         margin-top: auto;
     }
     .bg-app{
         width: auto;
-        height:auto;
         margin: auto;
       }
       .phs{
@@ -153,9 +154,13 @@
     }
     .ph img{
         width: 100px;
-        height: 100px;
+       
+         height: 100px;
+    }
+    .ph {
+        width: 100%;
     }
     .phs{
-        padding: auto inherit;
+        padding: 10px;
       }
 }
