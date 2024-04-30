@@ -11,6 +11,11 @@
     display: none;
     justify-content: start;
     padding: 10px;
+<<<<<<< HEAD
+=======
+    color: #fff;
+    text-align: center;
+>>>>>>> 2e7f92363e62564cd56705014fb928fd345757f5
 }
 .sign-up-box{
     height: 50vh;

@@ -5,7 +5,15 @@
     border-radius: 20px;
     color: white;
 }
-
+.nodata{
+    background-color: rgba(255, 158, 158, 0.722);
+    margin: 10px 0px;
+    display: none;
+    justify-content: start;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
 .sign-up-box{
     height: 50vh;
     width:100%;
